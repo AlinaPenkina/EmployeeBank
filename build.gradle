@@ -1,7 +1,7 @@
 plugins {
     id 'org.springframework.boot' version '2.1.7.RELEASE'
     id 'java'
-    id "org.flywaydb.flyway" version "5.2.4"
+//    id "org.flywaydb.flyway" version "5.2.4"
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -25,11 +25,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-freemarker'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     compile('org.flywaydb:flyway-core')
-    compile('org.springframework.boot:spring-boot-starter-jdbc')
-    compile('org.springframework.boot:spring-boot-starter-web')
+//    compile('org.springframework.boot:spring-boot-starter-jdbc')
+//    compile('org.springframework.boot:spring-boot-starter-web')
     runtimeOnly("org.postgresql:postgresql")
-    runtime group: 'org.flywaydb', name: 'flyway-gradle-plugin', version: '3.0'
+//    runtime group: 'org.flywaydb', name: 'flyway-gradle-plugin', version: '3.0'
 }

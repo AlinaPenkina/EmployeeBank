@@ -2,7 +2,7 @@
 <dataSource name="bank@localhost">
   <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.9">
     <root id="1">
-      <ServerVersion>11.4</ServerVersion>
+      <ServerVersion>11.5</ServerVersion>
     </root>
     <database id="2" parent="1" name="bank">
       <ObjectId>16384</ObjectId>
@@ -11,7 +11,7 @@
       <Visible>1</Visible>
     </database>
     <database id="3" parent="1" name="postgres">
-      <ObjectId>13067</ObjectId>
+      <ObjectId>13117</ObjectId>
       <Comment>default administrative connection database</Comment>
     </database>
     <role id="4" parent="1" name="pg_execute_server_program">
@@ -66,7 +66,7 @@
       <BypassRls>1</BypassRls>
     </role>
     <schema id="13" parent="2" name="information_schema">
-      <ObjectId>12771</ObjectId>
+      <ObjectId>12821</ObjectId>
     </schema>
     <schema id="14" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
@@ -85,6 +85,7 @@
     <schema id="18" parent="2" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
+      <IntrospectionTimestamp>2019-09-03.10:19:57.037</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -130,20 +131,9 @@
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
-    <sequence id="25" parent="18" name="employee_id_seq">
-      <ObjectId>16413</ObjectId>
-      <StateNumber>580</StateNumber>
-      <SequenceIdentity>1..2147483647</SequenceIdentity>
-      <CacheSize>1</CacheSize>
-      <DataType>integer</DataType>
-    </sequence>
-    <table id="26" parent="18" name="employee">
-      <ObjectId>16415</ObjectId>
-      <StateNumber>580</StateNumber>
-    </table>
-    <table id="27" parent="18" name="flyway_schema_history">
-      <ObjectId>16385</ObjectId>
-      <StateNumber>570</StateNumber>
+    <table id="25" parent="18" name="flyway_schema_history">
+      <ObjectId>16395</ObjectId>
+      <StateNumber>574</StateNumber>
     </table>
   </database-model>
 </dataSource>
